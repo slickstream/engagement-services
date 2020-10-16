@@ -1,7 +1,7 @@
 import { SosService } from '@slickstream/slickstream-os-common';
-export declare type FAVORITES_SERVICE_NAME = '@slickstream/engagement/favorites-service';
+export declare const FAVORITES_SERVICE_NAME = "@slickstream/engagement/favorites-service";
 export interface SlickstreamFavoritesService extends SosService {
-    name: FAVORITES_SERVICE_NAME;
+    name: '@slickstream/engagement/favorites-service';
     package: '@slickstream/engagement-services';
     definitions: 'esm/favorites-service.d.ts';
     version: '2.0.0';

@@ -1,10 +1,10 @@
 import { SosService } from '@slickstream/slickstream-os-common';
 import { PageDescriptor } from './engagement-services-common';
 
-export type GAME_SERVICE_NAME = '@slickstream/engagement/game-service';
+export const GAME_SERVICE_NAME = '@slickstream/engagement/game-service';
 
 export interface SlickstreamGameService extends SosService {
-  name: GAME_SERVICE_NAME;
+  name: '@slickstream/engagement/game-service';
   package: '@slickstream/engagement-services';
   definitions: 'esm/game-service.d.ts';
   version: '2.0.0';
