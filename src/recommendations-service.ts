@@ -1,8 +1,10 @@
 import { PageDescriptorOptions, PageListing } from './engagement-services-common';
 import { SosService } from '@slickstream/slickstream-os-common';
 
+export type RECOMMENDATIONS_SERVICE_NAME = '@slickstream/engagement/recommendations-service';
+
 export interface SlickstreamRecommendationsService extends SosService {
-  name: '@slickstream/engagement/recommendations-service';
+  name: RECOMMENDATIONS_SERVICE_NAME;
   package: '@slickstream/engagement-services';
   definitions: 'esm/recommendations-service.d.ts';
   version: '2.0.0';

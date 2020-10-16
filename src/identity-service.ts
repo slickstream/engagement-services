@@ -1,7 +1,9 @@
 import { SosService } from '@slickstream/slickstream-os-common';
 
+export type IDENTITY_SERVICE_NAME = '@slickstream/engagement/identity-service';
+
 export interface SlickstreamIdentityService extends SosService {
-  name: '@slickstream/engagement/identity-service';
+  name: IDENTITY_SERVICE_NAME;
   package: '@slickstream/engagement-services';
   definitions: 'esm/identity-service.d.ts';
   version: '2.0.0';

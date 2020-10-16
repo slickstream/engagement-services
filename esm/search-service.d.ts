@@ -1,8 +1,9 @@
 import { SosService } from '@slickstream/slickstream-os-common';
 import { PageDescriptorOptions, PageListing } from './engagement-services-common';
+export declare type SEARCH_SERVICE_NAME = '@slickstream/engagement/search-service';
 export interface SlickstreamSearchService extends SosService {
-    name: '@slickstream/engagement/search';
-    package: '@slickstream/search-services';
+    name: SEARCH_SERVICE_NAME;
+    package: '@slickstream/engagement-services';
     definitions: 'esm/search-service.d.ts';
     version: '2.0.0';
     online: boolean;
