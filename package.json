@@ -1,0 +1,19 @@
+{
+  "name": "@slickstream/engagement-services",
+  "version": "2.0.0",
+  "description": "Common type definitions and supporting code for Slickstream engagement services",
+  "main": "./lib/engagement-services-types.js",
+  "module": "./esm/engagement-services-types.js",
+  "types": "./esm/engagement-services-types.d.ts",
+  "scripts": {
+    "build": "tsc -b --force && tsc -p tsconfig.esm.json",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kingston Duffie <kduffie@hivepoint.com> (http://slickstream.com)",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "@slickstream/slickstream-os-common": "^2.0.0"
+  }
+}
