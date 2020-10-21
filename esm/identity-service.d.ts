@@ -1,10 +1,6 @@
 import { SosService } from '@slickstream/slickstream-os-common';
 export declare const IDENTITY_SERVICE_NAME = "@slickstream/engagement/identity-service";
 export interface SlickstreamIdentityService extends SosService {
-    name: '@slickstream/engagement/identity-service';
-    package: '@slickstream/engagement-services';
-    definitions: 'esm/identity-service.d.ts';
-    version: '2.0.0';
     identity: SlickstreamWebUserIdentity;
     addListener(listener: IdentityListener): void;
     removeListener(listener: IdentityListener): void;

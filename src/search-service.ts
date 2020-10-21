@@ -4,10 +4,6 @@ import { PageDescriptorOptions, PageListing } from './engagement-services-common
 export const SEARCH_SERVICE_NAME = '@slickstream/engagement/search-service';
 
 export interface SlickstreamSearchService extends SosService {
-  name: '@slickstream/engagement/search-service';
-  package: '@slickstream/engagement-services';
-  definitions: 'esm/search-service.d.ts';
-  version: '2.0.0';
   online: boolean;
   addListener(listener: SearchListener): void;
   removeListener(listener: SearchListener): void;
