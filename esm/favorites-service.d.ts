@@ -4,7 +4,6 @@ export interface SlickstreamFavoritesService extends SosService {
     currentPage: FavoritesPageInfo;
     addListener(listener: FavoritesPageListener): void;
     removeListener(listener: FavoritesPageListener): void;
-    getPage(url: string): Promise<FavoritesPageInfo | null>;
 }
 export interface FavoritesPageInfo {
     totalFavorites: number;
@@ -14,6 +13,5 @@ export interface FavoritesPageInfo {
 export interface FavoritesPageListener {
     onFavoriteStateChange?(newState: boolean): void;
     onFavoriteCountChange?(newValue: number): void;
-    onHearts?(from: string | null): void;
-    onPagesAvailable?(): void;
+    onRemoteHearts?(from: string | null): void;
 }

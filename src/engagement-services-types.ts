@@ -5,3 +5,4 @@ export * from './game-service';
 export * from './identity-service';
 export * from './recommendations-service';
 export * from './search-service';
+export * from './index-service';

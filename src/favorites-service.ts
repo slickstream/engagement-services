@@ -6,11 +6,6 @@ export interface SlickstreamFavoritesService extends SosService {
   currentPage: FavoritesPageInfo;
   addListener(listener: FavoritesPageListener): void;
   removeListener(listener: FavoritesPageListener): void;
-
-  // To get favorite information about another page on the same site,
-  // provide the full URL of that page.  If there is no favorite info
-  // for that page, null will be returned.
-  getPage(url: string): Promise<FavoritesPageInfo | null>;
 }
 
 export interface FavoritesPageInfo {
@@ -26,8 +21,6 @@ export interface FavoritesPageListener {
   onFavoriteCountChange?(newValue: number): void;
   // When another visitor adds hearts (without necessarily changing favorite state).  If available,
   // a location (e.g., 'Chicago') of that visitor
-  onHearts?(from: string | null): void;
-  // When previous answers to getPage returned null, but they may no longer return null
-  onPagesAvailable?(): void;
+  onRemoteHearts?(from: string | null): void;
 }
 

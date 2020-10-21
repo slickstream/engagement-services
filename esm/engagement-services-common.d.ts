@@ -20,4 +20,5 @@ export interface PageDescriptorOptions {
     includeDescription?: boolean;
     includeFavoriteInfo?: boolean;
     images?: PageImageOption;
+    preferredImageAspectRatio?: number;
 }

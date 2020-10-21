@@ -23,4 +23,5 @@ export interface PageDescriptorOptions {
   includeDescription?: boolean;
   includeFavoriteInfo?: boolean;
   images?: PageImageOption;
+  preferredImageAspectRatio?: number;  // width divided by height where 1 is square
 }
