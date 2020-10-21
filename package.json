@@ -1,6 +1,6 @@
 {
   "name": "@slickstream/engagement-services",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Common type definitions and supporting code for Slickstream engagement services",
   "main": "./lib/engagement-services-types.js",
   "module": "./esm/engagement-services-types.js",
@@ -14,6 +14,7 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
+    "@slickstream/guild-apis": "^1.27.11",
     "@slickstream/slickstream-os-common": "^2.0.0"
   }
 }

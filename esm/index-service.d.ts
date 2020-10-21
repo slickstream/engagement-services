@@ -6,8 +6,8 @@ export interface SlickstreamIndexService extends SosService {
     online: boolean;
     addListener(listener: IndexListener): void;
     removeListener(listener: IndexListener): void;
-    getCollection(type: IndexCollectionType, options?: IndexListingOptions): Promise<PageListing>;
     getPage(url: string, options?: IndexListingOptions): Promise<PageDescriptor>;
+    getCollection(type: IndexCollectionType, options?: IndexListingOptions): Promise<PageListing>;
 }
 export interface IndexListener {
     onlineStatusChanged(): void;
