@@ -15,4 +15,5 @@ export interface FavoritesPageListener {
     onFavoriteStateChange?(newState: boolean): void;
     onFavoriteCountChange?(newValue: number): void;
     onHearts?(from: string | null): void;
+    onPagesAvailable?(): void;
 }

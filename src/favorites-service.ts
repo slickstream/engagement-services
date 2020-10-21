@@ -27,5 +27,7 @@ export interface FavoritesPageListener {
   // When another visitor adds hearts (without necessarily changing favorite state).  If available,
   // a location (e.g., 'Chicago') of that visitor
   onHearts?(from: string | null): void;
+  // When previous answers to getPage returned null, but they may no longer return null
+  onPagesAvailable?(): void;
 }
 
